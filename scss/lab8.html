@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SCSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SCSS</h1>
+    <!--Задание 2 scss-->
+    <ul class="number-list"></ul>
+
+    <script>
+        const list = document.querySelector('.number-list');
+        for (let i = 1; i <= 100; i++) {
+            const li = document.createElement('li');
+            li.textContent = i;
+            list.appendChild(li);
+        }
+    </script>
+    <!--Задание 3 scss-->
+    <h1 id="logo">Логотип</h1>
+    
+    <div class="m">
+        <a href="#">Домой</a>
+        <a href="#">Товары</a>
+        <a href="#">Услуги</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+    </div>
+    
+    <p class="char">Характеристика</p>
+    
+    <div class="columns">
+        <a>Колонка 1</a>
+        <a>Колонка 2</a>
+        <a>Колонка 3</a>
+    </div>
+    
+    <p class="b">ⓒ MEPHI 2023</p>
+</body>
+</html>

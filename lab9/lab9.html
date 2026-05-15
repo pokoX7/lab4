@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 4 - TypeScript</title>
+</head>
+<body>
+    <h1>Лабораторная работа 4 - TypeScript</h1>
+
+    <h2>Задание 2: Класс User с интерфейсом</h2>
+    <button onclick="demoTask2()">Создать User и вызвать hello()</button>
+    <p id="task2Result"></p>
+
+    <h2>Задание 3: Класс User с псевдонимом типа</h2>
+    <button onclick="demoTask3()">Создать UserWithType и вызвать hello()</button>
+    <p id="task3Result"></p>
+
+    <h2>Задание 4: Функция distance</h2>
+    <button onclick="demoDistance1()">distance(0, 0, 3, 4)</button>
+    <button onclick="demoDistance2()">distance({x:0, y:0}, {x:3, y:4})</button>
+    <p id="distanceResult"></p>
+
+    <h2>Задание 5: Бинарное дерево</h2>
+    <button onclick="demoInitTree()">Инициализировать дерево (10,5,15,3,7)</button>
+    <button onclick="demoPrintTree()">Вывести дерево</button>
+    <br><br>
+    <input type="number" id="treeInput" placeholder="Введите число">
+    <button onclick="demoInsert()">Вставить</button>
+    <button onclick="demoSearch()">Найти</button>
+    <button onclick="demoDelete()">Удалить</button>
+    <br><br>
+    <input type="number" id="oldValue" placeholder="Старое значение">
+    <input type="number" id="newValue" placeholder="Новое значение">
+    <button onclick="demoUpdate()">Изменить</button>
+    <button onclick="demoHeight()">Высота дерева</button>
+    <p id="treeResult">Дерево: пустое</p>
+
+    <h2>Задание 6: Паттерны</h2>
+    <h3>Adapter</h3>
+    <button onclick="demoAdapter()">Вызвать Adapter</button>
+    <p id="adapterResult"></p>
+
+    <h3>Strategy</h3>
+    <button onclick="demoSum()">Сумма [1,2,3,4]</button>
+    <button onclick="demoMultiply()">Произведение [1,2,3,4]</button>
+    <p id="strategyResult"></p>
+
+    <h3>Observer</h3>
+    <button onclick="demoInitObservers()">Создать наблюдателей</button>
+    <button onclick="demoNotify()">Уведомить всех</button>
+    <button onclick="demoRemoveFirst()">Удалить первого</button>
+    <button onclick="demoNotifyAgain()">Уведомить снова</button>
+    <pre id="observerLog"></pre>
+
+    <script src="lab9.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+// Задание 2
+.number-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.loop(@n) when (@n <= 100) {
+    .number-list li:nth-child(@{n}) {
+        background-color: rgb(@n, 256 - @n, 0);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        color: white;
+        font-weight: bold;
+    }
+    .loop(@n + 1);
+}
+.loop(1);
+
+// Задание 3
+#logo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.m {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 80px;
+    background: #e9e8e8;
+    text-align: center;
+    padding-top: 40px;
+
+    a {
+        text-decoration: underline;
+        padding: 30px 10px 30px 10px;
+        font-size: 20px;
+    }
+}
+
+.char {
+    width: 90%;
+    text-align: center;
+    height: 160px;
+    background: #e9e8e8;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.columns {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 160px;
+    background: white;
+    text-align: center;
+    padding-top: 0px;
+    display: flex;
+    gap: 5%;
+
+    a {
+        background-color: #e9e8e8;
+        width: 30%;
+        height: 150px;
+        padding-top: 10px;
+    }
+}
+
+.b {
+    width: 90%;
+    text-align: center;
+    height: 40px;
+    background: #e9e8e8;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-top: 25px;
+}
